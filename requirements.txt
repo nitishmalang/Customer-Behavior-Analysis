@@ -1,7 +1,0 @@
-streamlit==1.25.0
-pandas==1.5.3
-plotly==5.16.0
-numpy==1.24.3
-airbyte-api==0.37.0
-motherduck==0.3.5
-requests==2.31.0
