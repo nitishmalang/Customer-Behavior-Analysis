@@ -12,8 +12,7 @@ E-COMMERCE-BEHAVIOR-ANALYSIS
 │   └── config  
 │       ├── config.py             
 ├── .venv                        
-├── .env                        
-├── requirements.txt             
+├── .env                                    
 ├── README.md                  
 
 
@@ -53,16 +52,14 @@ Activate the environment:
 ### For PowerShell  
 `.\.venv\Scripts\Activate.ps1`  
 
-### 3. Install Dependencies
 
-`pip install -r requirements.txt`
 
-### 4. Configure Environment Variables
+### 3. Configure Environment Variables
 Create a .env file in the project root and add your Motherduck Token:
 
 MOTHERDUCK_TOKEN=your_token_here  
 
-### 5. Run the Application
+### 4. Run the Application
 
 `streamlit run src/app.py`
 
