@@ -1,0 +1,11 @@
+{  
+  "name": "E-Commerce Dashboard",  
+  "image": "python:3.9",  
+  "features": {  
+    "docker-in-docker": "latest"  
+  },  
+  "settings": {  
+    "terminal.integrated.defaultProfile.linux": "bash"  
+  },  
+  "extensions": ["ms-python.python", "ms-toolsai.jupyter"]  
+}  
