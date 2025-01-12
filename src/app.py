@@ -3,7 +3,6 @@ from utils.database import get_inventory_status, get_sales_trends, get_customer_
 import plotly.express as px
 import plotly.graph_objects as go
 
-# Page Configuration
 st.set_page_config(
     page_title="E-Commerce Insights Dashboard",
     page_icon="🛒",
@@ -11,14 +10,12 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# Sidebar Navigation
 st.sidebar.title("🔍 Navigation")
 selected_section = st.sidebar.radio(
     "Select a Section:",
     ["Overview", "Inventory Status", "Sales Trends", "Customer Insights"],
 )
 
-# Dashboard Header
 st.markdown(
     """
     <style>
@@ -42,7 +39,7 @@ st.markdown(
 st.markdown('<div class="title">📊 E-Commerce Insights Dashboard</div>', unsafe_allow_html=True)
 st.markdown('<div class="subtitle">Unlock actionable insights to drive better business decisions</div>', unsafe_allow_html=True)
 
-# Overview Section
+
 if selected_section == "Overview":
     st.header("📄 Overview")
     st.markdown(
@@ -53,9 +50,8 @@ if selected_section == "Overview":
         - **Customer Insights:** Understand spending behavior to tailor marketing strategies.
         """
     )
-    st.image("assets/overview_banner.png", use_column_width=True)
 
-# Inventory Status Section
+
 if selected_section == "Inventory Status":
     st.header("📦 Inventory Status")
     inventory_data = get_inventory_status()
@@ -69,7 +65,6 @@ if selected_section == "Inventory Status":
             use_container_width=True,
         )
 
-# Sales Trends Section
 if selected_section == "Sales Trends":
     st.header("📈 Sales Trends")
     sales_data = get_sales_trends()
@@ -88,7 +83,6 @@ if selected_section == "Sales Trends":
         fig.update_traces(line=dict(color="royalblue", width=3), marker=dict(size=8))
         st.plotly_chart(fig, use_container_width=True)
 
-# Customer Insights Section
 if selected_section == "Customer Insights":
     st.header("🏆 Customer Insights")
     customer_data = get_customer_insights()
@@ -108,7 +102,6 @@ if selected_section == "Customer Insights":
         fig.update_traces(marker_line_color="black", marker_line_width=1)
         st.plotly_chart(fig, use_container_width=True)
 
-# Footer
 st.markdown(
     """
     <style>
