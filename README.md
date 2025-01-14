@@ -23,6 +23,10 @@ Streamlit: Interactive web-based dashboard framework.
 Python: Core language for backend and data processing.
 Plotly: For creating intuitive and interactive visualizations.
 
+###  Architecture Diagram
+![diagram-export-15-1-2025-1_51_59-am](https://github.com/user-attachments/assets/f65a6aaa-0213-4879-8222-d46cd6e15984)
+
+
 ### ⚙️ Features
 Inventory Status
 
